@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Here is a list of all available sales.</h1>
+  <ul>
+    {% for tractortek_sales in sales_list %}
+    <li>{{tractortek_sales}}</li>
+    {% endfor %}
+  </ul>
+
+</div>
+{% endblock %}
